@@ -1,0 +1,29 @@
+main {
+    margin: 0;
+    padding: 0;
+    height: calc(100vh - 72px );
+    background-color: #ececec; 
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.coming-soon-text {
+    font-size: 5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #8956F1, #CB80FF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all .3s;
+}
+@media (max-width:620px) {
+    .coming-soon-text {
+        font-size: 4rem;
+    }
+}
+@media (max-width:425px) {
+    .coming-soon-text {
+        font-size: 3rem;
+    }
+}
+
+  

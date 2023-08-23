@@ -1,0 +1,128 @@
+:root {
+    --main-color:#FFF;
+    --dark-color:#241B35;
+    --black-color:#020102;
+    --light-color:#ececec;
+    --main-color-second:#8956F1;
+    --main-hover-second:#CB80FF;
+    --red-color:#cd0000;
+    --main-transition-duration:0.3s;
+    --main-backgroundcolor:#ececec;
+    --border-radius:6px;
+}
+.container {
+    padding: 0 20px;
+}
+.add-form{
+    padding: 20px 20px;
+    margin: 40px auto;
+    background-color: var(--main-color);
+    border: 1px solid gray;
+    border-radius: 8px;
+    color: var(--dark-color);
+}
+.container h2{
+    color: var(--main-color-second);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+}
+form{
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+form input {
+    color: var(--dark-color);
+    font-weight: 700;
+}
+form .left{
+    float: left;
+    width: 49%;
+}
+form .right{
+    float: right;
+    width: 49%;
+}
+form .right img {
+    border: 3px solid var(--dark-color);
+    border-radius: var(--border-radius);
+}
+@media (max-width:767px) {
+     form .left,
+     form .right{
+        width: 100%;
+        padding: 0 20px;
+        float: none;
+    }
+}
+form input:not([type='submit']){
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: rgba(218, 218, 218, 0.19);
+    position: relative;
+
+}
+form input:not([type='submit']):focus{
+    outline:1px solid var(--main-color);
+}
+::-webkit-file-upload-button{
+    position: absolute;
+    top:0 ;
+    right:-10px;
+    width: fit-content;
+    height: 50px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--main-color-second);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+form input{
+    height: 50px;
+}
+form input[type='submit']{
+    padding: 10px;
+    width: 100%;
+    border-color: transparent;
+    background-color: var(--main-color-second);
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form input:not([type='submit']):focus::placeholder{
+    opacity: 0;
+    transition: .3s;
+}
+/*Error */
+.error{
+    width: 100%;
+    padding:1rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    text-shadow: none;
+    margin: 10px 0;
+    color: #b02a37;
+    text-align: center;
+    background-color:#f8d7da;
+}
+.error:hover{
+    border-color: #b02a37;
+}
+.container .cards.card{
+    width: 350px;
+    margin: 20px auto;
+}
+
+@media (max-width:420px ) {
+    .container .cards.card{
+        width: 100%;
+    }
+}
